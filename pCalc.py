@@ -198,7 +198,7 @@ def getEquity(hands, communityCards):
        
 #print(getTopHand([Card(1, 4), Card(3,9), Card(2,7), Card (0, 6), Card(1, 6), Card(3, 8), Card(3, 12)]))
 
-print(getEquity([[Card(3,12), Card(3,11)], [Card(1,9), Card(2,6)], [Card(2,2), Card(2,11)], [Card(0,9), Card(1,4)]], [Card(3,5), Card(1, 1), Card(2, 8)]))
+#print(getEquity([[Card(3,12), Card(3,11)], [Card(1,9), Card(2,6)], [Card(2,2), Card(2,11)], [Card(0,9), Card(1,4)]], [Card(3,5), Card(1, 1), Card(2, 8)]))
                         
                     
                     
