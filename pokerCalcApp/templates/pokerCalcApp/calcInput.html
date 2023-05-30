@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" ng-app ="pokerCalcApp">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Poker Calculator</title>
+        <!-- Latest compiled and minified CSS -->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+        />
+    
+        <!-- Latest compiled JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Coolors Palette Widget -->
+        <script src="https://coolors.co/palette-widget/widget.js"></script>
+        <script data-id="005987477239974903">
+          new CoolorsPaletteWidget("005987477239974903", [
+            "0a0908",
+            "49111c",
+            "f2f4f3",
+            "a9927d",
+            "5e503f",
+          ]);
+        </script>
+        <!-- React -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react-dom.min.js"></script>
+        <!--Google Fonts-->
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Space+Mono"
+        />
+        <style>
+          body {
+            font-family: "Space Mono", serif;
+            font-size: 12px;
+          }
+        </style>
+      </head>
+      <header>
+        <div>
+          <h1 style="text-align: center; color: #0a0908; font-family: Space Mono">
+            Poker Calculator
+          </h1>
+        </div>
+      </header>
+      <body style="background-color: #a9927d">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              {{numPlayers}}
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1"
+                  >Number of Players</span
+                >
+                <input
+                  type="number"
+                  class="form-control"
+                  placeholder="Number of Players"
+                  aria-label="Number of Players"
+                  aria-describedby="basic-addon1"
+                  ng-model="numPlayers"
+                />
+              </div>
+            </div>
+        </body>
+        

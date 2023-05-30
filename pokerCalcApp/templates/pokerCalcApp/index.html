@@ -49,18 +49,21 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <form action = "" method="numPlayers">
+          <form action = "" method="POST">
+             {% csrf_token %}
             <div class="mb-3">
-              <label for="numPlayers" class="form-label"
-                >Number of Players</label
-              >
-              <input
-                type="number"
-                class="form-control"
-                id="numPlayers"
-                aria-describedby="numPlayers"
-                value="numPlayers"
-              />
+              <label for= "numPlayers" class="form-label" 
+                >Number of Players</label>
+              <select class="form-select" aria-label="Default select example" name = "numPlayers">
+                <option selected>Choose...</option>
+                <option value="2">2 Players</option>
+                <option value="3">3 Players</option>
+                <option value="4">4 Players</option>
+                <option value="5">5 Players</option>
+                <option value="6">6 Players</option>
+                <option value="7">7 Players</option>
+                <option value="8">8 Players</option>
+              </select>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
           </form>
